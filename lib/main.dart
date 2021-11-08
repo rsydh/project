@@ -3,10 +3,7 @@ import 'package:project/post_page.dart';
 //import 'package:dart:ui';
 import 'package:project/user/user_data.dart';
 //import 'package:project/bloc.dart';
-import 'package:web_socket_channel/io.dart';
-import 'package:web_socket_channel/status.dart' as status;
 import 'package:web_socket_channel/web_socket_channel.dart';
-import 'package:project/Animation/FadeAnimation.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -109,101 +106,6 @@ class HomePage extends StatelessWidget {
                 ],
               )
          ),
-        
-      // appBar: PreferredSize(
-      //   preferredSize: const Size.fromHeight(80),
-      //   child: AppBar(
-      //     flexibleSpace:
-      //     Container(
-      //       decoration: const BoxDecoration(
-      //         image: DecorationImage(image: image)
-      //       ),),),
-
     );
   }
-// ignore: use_key_in_widget_constructors
-// class MyApp extends StatelessWidget {
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//         title: 'Final project',
-//         theme: ThemeData(
-//           primarySwatch: Colors.teal,
-//         ),
-//         home: ButtonWidget());
-//   }
-// }
-// // void _toHomePage() {
-// //     Navigator.push(
-// //       context,
-// //       MaterialPageRoute(builder: (context) => HomePage(channel: channel)),
-// //     );
-// //   }
-
-// //   void _signIn() {
-// //     if (_controller.text.isNotEmpty) {
-// //       channel.sink.add('{"type": "sign_in","data": {"name": "${_controller.text}"}}');
-// //       print('${_controller.text} sign in success');
-// //       _controller.clear();
-// //       _toHomePage();
-// //     }
-// //   }
-
-// // ignore: use_key_in_widget_constructors
-// class ButtonWidget extends StatefulWidget {
-//   @override
-//   _ButtonWidgetState createState() => _ButtonWidgetState();
-// }
-
-// class _ButtonWidgetState extends State<ButtonWidget> {
-//   final _textBloc = TextBloc();
-
-//   get channel => null;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//         appBar: AppBar(
-//           title: const Text('User page'),
-//         ),
-//         body: Column(
-//           children: [
-//             StreamBuilder(
-//                 stream: _textBloc.textStream,
-//                 builder: (context, AsyncSnapshot<String> snapshot) {
-//                   return Column(
-//                     children: [
-//                       Container(
-//                       padding: const EdgeInsets.all(10),
-//                       child: TextField(
-//                         onChanged: (String text) => _textBloc.updateText(text),
-//                         decoration: const InputDecoration(
-//                       border: OutlineInputBorder(),
-//                       labelText: 'Enter your username',
-//                     ),
-//                       ),),
-//                       Container(
-// //                         height:50,
-// //                         padding:const EdgeInsets.fromLTRB(10, 10, 10, 0),
-// //                         child: ElevatedButton(
-// //                           child: const Text('Sign in to next page'),
-// //                         // When the user presses the button, show an alert dialog containing
-// //                         // the text that the user has entered into the text field.
-// //                         onPressed: () {
-// //                           Navigator.push(context, MaterialPageRoute(builder: (context)=> PostPage()),
-// //                           );
-// //                         },
-// //                         //tooltip: 'Enter username',
-// //                         //child: const Icon(Icons.text_fields),
-// //                       ),
-// //                       ),],
-// //                   );
-// //                 }),
-// //           ],
-// //         ));
-// //   }
-
-//   PostPage() {}
-// }
 }
